@@ -1,0 +1,22 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class disable : MonoBehaviour {
+
+	public GameObject police;		
+
+	// Use this for initialization
+	IEnumerator Start () {
+		yield return new WaitForSeconds (.0001f);
+		hello ();
+	}
+	
+	// Update is called once per frame
+	void hello () {
+
+		police.GetComponent<WaypointProgressTracker>().enabled=false;
+
+		
+	}
+}
